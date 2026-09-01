@@ -1,6 +1,8 @@
-# This is the CODEOWNERS file.
-# It defines who is responsible for different parts of the codebase.
-
-* @kalviumcommunity/devops-instructors
+# Payments logic handles financial transactions, requiring strict audit by the Fintech team to prevent revenue loss.
 /src/payments.js @kalviumcommunity/fintech-team
+
+# Auth handles security and user login, requiring oversight by the Security team to ensure no vulnerabilities are introduced.
 /src/auth.js @kalviumcommunity/security-team
+
+# CI/CD pipelines and repository configuration must be reviewed by the DevOps team to maintain build and deployment stability.
+/.github/workflows/ @kalviumcommunity/devops-instructors
